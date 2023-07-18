@@ -139,6 +139,34 @@
         font-size: 50px;
         margin: auto;
       }
+      /* sixth example */
+      .equal-height-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+      }
+
+      .first {
+        background-color: #fff;
+        padding: 20px;
+        flex: 1;
+      }
+
+      .second {
+        background-color: yellow;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .second-a {
+        background-color: #c0dbe2;
+        flex: 1;
+      }
+      .second-b {
+        background-color: #cdf1c3;
+        flex: 1;
+      }
     </style>
   </head>
   <body>
@@ -242,6 +270,41 @@
     <!-- 5 -->
     <div class="banner">
       <div class="center-me">가운데</div>
+    </div>
+
+    <!-- sixth example -->
+    <div class="equal-height-container">
+      <div class="first">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi
+          similique amet voluptatem molestiae nostrum ab nesciunt blanditiis
+          repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi
+          doloribus quo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+          quisquam, veritatis ducimus, vero magnam hic quia pariatur asperiores
+          laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi
+          iusto ullam error reiciendis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi
+          similique amet voluptatem molestiae nostrum ab nesciunt blanditiis
+          repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi
+          doloribus quo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+          quisquam, veritatis ducimus, vero magnam hic quia pariatur asperiores
+          laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi
+          iusto ullam error reiciendis.
+        </p>
+      </div>
+
+      <div class="second">
+        <div class="second-a">A</div>
+        <div class="second-b">B</div>
+      </div>
     </div>
   </body>
 </html>
