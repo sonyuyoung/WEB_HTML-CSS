@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      body {
+        background-color: #ffeead;
+        margin: 10px;
+      }
+      .container {
+        border: 5px solid #ffcc5c;
+        display: flex;
+        /* 안에있는 블럭들이 중간으로 모임 */
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .container div {
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+        color: #ffeead;
+        justify-content: space-between;
+      }
+
+      .home {
+        background-color: #96ceb4;
+        margin-right: auto;
+        flex: 1;
+        order: 2;
+      }
+      .search {
+        background-color: #ff6f69;
+        flex: 3;
+        order: 3;
+      }
+      .logout {
+        background-color: skyblue;
+        flex: 1;
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home">home</div>
+      <div class="search">search</div>
+      <div class="logout">logout</div>
+    </div>
+  </body>
+</html>
