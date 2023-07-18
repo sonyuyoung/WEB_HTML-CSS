@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS 적용</title>
+    <!-- style태그 or css 파일 링크 -->
+
+  </head>
+<style>
+  
+/* body 요소를 선택 */
+body {
+  /* 글꼴 변경 */
+  font-family: "NanumGothic";
+}
+
+
+/* 클래스(.)를 선택 */
+
+.male {
+  /* 글자색 변경 */
+  color: #007bff;
+}
+
+.female {
+  /* 글자색 변경 */
+  color: #e43681;
+}
+
+
+/* ul 선택 */
+
+ul {
+  /* 리스트 스타일 없애기! bullet 사라짐 */
+  list-style: none;
+}
+
+
+/* 아이디(#) 선택 */
+
+#ceo {
+  /* 배경색 변경 */
+  background-color: #dfe0e1;
+}
+</style>
+  <body>
+    <h1>별다방 카페</h1>
+    <h2>운영진</h2>
+    <ul>
+      <li class="male" id="ceo">X</li>
+      <li class="female">Y</li>
+    </ul>
+    <h2>매니저</h2>
+    <ul>
+      <li class="male">P</li>
+      <li class="female">Q</li>
+    </ul>
+    <h2>알바</h2>
+    <ul>
+      <li class="male">A</li>
+      <li class="female">B</li>
+      <li class="male">C</li>
+      <li class="female">D</li>
+    </ul>
+  </body>
+</html>
