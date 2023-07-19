@@ -1,0 +1,128 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* reset code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #4070f4;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #4070f4;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  height: 70px;
+}
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+/* 미디어 버튼들  */
+
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.buttons {
+  width: 82%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  padding: 10px 25px;
+  background-color: #4070f4;
+  border: 0;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.analytics {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+
+.analytics .data {
+}
+
+.analytics .data2::after {
+  content: "";
+  border-right: 1px solid #ccc;
+  padding: 0 20px 0px 0;
+}
+.analytics .data2::before {
+  content: "";
+  border-left: 1px solid #ccc;
+  padding: 0 20px 0px 0;
+}
